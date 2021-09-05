@@ -135,7 +135,3 @@ window.onload = function() {
         outputDiv.classList.remove('active');
     }
 }
-
-
-// pencere boyutuna göre link uzunluğu
-// pencere daraltırken header bozuluyor
