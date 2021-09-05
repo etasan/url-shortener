@@ -18,7 +18,7 @@ form.addEventListener('submit', (event) => {
 
 async function getUrl(url) {
     submitButton.classList.add('button-p-0');
-    submitButton.innerHTML = `<img style="height: 40px; width: 40px;" class="img-fluid" src="/images/loader.gif" alt="">`;
+    submitButton.innerHTML = `<img style="height: 40px; width: 40px;" class="img-fluid" src="images/loader.gif" alt="">`;
     await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`)
         .then((response) => response.json())
         .then((data) => writeLink(data))
